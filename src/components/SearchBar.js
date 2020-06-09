@@ -23,7 +23,6 @@ export default class SearchBar extends Component {
               type="text"
               value={this.state.term}
               onChange={this.onInputChange}
-              // onChange={event => this.setState({ term: event.target.value })}
             />
           </div>
         </form>

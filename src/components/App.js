@@ -7,6 +7,10 @@ import VideoDetail from './VideoDetail';
 class App extends Component {
   state = { videos: [], selectedVideo: null };
 
+  componentDidMount() {
+    this.onTermSubmit('Javascript Crash Course');
+  }
+
   onTermSubmit = async term => {
     const response = await youtube.get('/search', {
       params: {
@@ -27,8 +31,9 @@ class App extends Component {
   render() {
     return (
       <div className="ui container">
-        {/* TODO: change onFormSubmit to onTermSubmit */}
-        <SearchBar onFormSubmit={this.onTermSubmit} />
+        <div className="ui segment">
+          <SearchBar onFormSubmit={this.onTermSubmit} />
+        </div>
         <div className="ui grid">
           <div className="ui row">
             <div className="eleven wide column">
