@@ -1,6 +1,6 @@
-Renders video selection from search bar and now playing
+YouTube application - renders video player, search bar, list of videos, click a video to play it
 
-React :: Youtube Video API :: Deeply Nested Callbacks :: Semantic ui :: CSS Flexbox
+React :: YouTube Video API :: Deeply Nested Callbacks :: Semantic ui :: CSS Flexbox :: Semantic ui Grid
 
 Fork :: Clone :: Run
 
